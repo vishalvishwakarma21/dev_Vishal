@@ -1,0 +1,7 @@
+{
+  "name": "Root2IoT",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

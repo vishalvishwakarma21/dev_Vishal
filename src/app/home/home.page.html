@@ -1,0 +1,30 @@
+<ion-header style="background-color: cadetblue">
+  <ion-toolbar>
+    <ion-title style="font-size: larger;text-align: center;height:55px;background-color: cadetblue;">
+      Root2Iot
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card class="cardforphoto">
+    <ion-card-header>
+      <img (click)="removePhoto()" src="{{Image}}">
+      <!--binging of the image -->
+    </ion-card-header>
+  </ion-card>
+
+
+  <ion-row class="rowforbuttons">
+    <ion-col class="colforbuttons" size="6">
+      <ion-button style="font-size: 17px;border: 3px solid black;" expand="full" (click)="takePhotos()">Take Picture</ion-button>
+      <!--function call for camera-->
+    </ion-col>
+    <ion-col size="6">
+      <ion-button style="font-size: 17px;border: 3px solid black;"  expand="full" (click)="getGallery()">Upload Picture</ion-button>
+      <!--function call for the gallery-->
+    </ion-col>
+  </ion-row>
+
+</ion-content>
